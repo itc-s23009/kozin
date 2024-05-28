@@ -1,0 +1,15 @@
+{
+  "java.jdt.ls.java.home": "/usr/lib/jvm/java-21-openjdk-amd64",
+  "java.jdt.ls.vmargs": "-javaagent:/path/to/lombok.jar",
+  "java.format.enabled": true,
+  "java.format.settings.profile": "GoogleStyle",
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+  "coc.preferences.formatOnSaveFiletypes": ["java"],
+  "snippets.ultisnips.directories": [
+    "UltiSnips"
+  ],
+  "snippets.extends": {
+    "javascript": ["html", "typescript"]
+  }
+}
+
