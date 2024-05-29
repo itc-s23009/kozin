@@ -18,18 +18,6 @@ endsnippet
 以下に、emitterというトリガーワードを持つスニペットの例を示します。
 このスニペットは行の先頭でのみ展開されます (b オプション)。
 
-```vim
-snippet emitter "emitter properties" b
-private readonly ${1} = new Emitter<$2>()
-public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
-endsnippet
-
-```vim
-snippet emitter "emitter properties" b
-private readonly ${1} = new Emitter<$2>()
-public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
-endsnippet
-
 ## 説明
 1. snippet emitter "emitter properties" b:
 snippetはスニペットの開始を示します。
@@ -47,3 +35,9 @@ ${1/^_(.*)/$1/}は、${1}の値が_で始まる場合、その_を取り除き�
 
 4. endsnippet:
 endsnippetはスニペットの終了を示します。
+
+```vim
+snippet emitter "emitter properties" b
+private readonly ${1} = new Emitter<$2>()
+public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+endsnippet
